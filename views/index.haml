@@ -1,1 +1,45 @@
-%h1 Hello World
+!!!
+/[if lt IE 7 ] <html class="ie ie6" lang="en">
+/[if IE 7 ] <html class="ie ie7" lang="en">
+/[if IE 8 ] <html class="ie ie8" lang="en">
+/ [if (gte IE 9)|!(IE)]><!
+%html{lang: "en"}
+  / <![endif]
+  %head
+    %meta{charset: "utf-8"}/
+    %title Idea Canvas App
+    %meta{content: "", name: "description"}/
+    %meta{content: "", name: "author"}/
+    %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}/
+
+    %link{ href: 'http://fonts.googleapis.com/css?family=Roboto:300,500',
+           rel: 'stylesheet', type: 'text/css'}/
+
+    %link{href: "assets/base.css", rel: "stylesheet"}/
+    %link{href: "assets/skeleton.css", rel: "stylesheet"}/
+    %link{href: "assets/layout.css", rel: "stylesheet"}/
+    %link{href: "assets/lean_canvas.css", rel: "stylesheet"}/
+
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+    %link{href: "assets/favicon.ico", rel: "shortcut icon"}/
+    %link{href: "assets/apple-touch-icon.png", rel: "apple-touch-icon"}/
+    %link{href: "assets/apple-touch-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "assets/apple-touch-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+
+
+  %body
+    .container.hero
+      .ten.columns.alpha
+        .main-message
+          %h1.main-title Lean Canvas.
+          %h3.proposition Where startups begin.
+          .download-link
+            %a.link-to-store{ href: '#' }
+              %object{ data: 'assets/download_badge_135x40.svg',
+                       type: 'image/svg+xml'}
+                %img{ src: 'assets/download_badge_135x40.png' }
+
+      .two.columns.omega
+        %img.sneak-peek{ src: 'assets/canvasMenu.png' }

@@ -1,0 +1,46 @@
+.hero {
+  top: 70px;
+}
+
+img.sneak-peek {
+  max-height: 600px;
+  position: absolute;
+  left: 60%;
+}
+
+h1.main-title {
+  text-transform: uppercase;
+  font-size: 100px;
+  line-height: 0.85em;
+}
+
+h3.proposition {
+  font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 0.8em;
+}
+
+div.main-message {
+  margin-top: 120px;
+}
+
+div.download-link {
+  margin-top: 50px;
+  text-align: center;
+}
+
+a.link-to-store {
+  position: relative;
+  display: inline-block;
+}
+
+a.link-to-store:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
