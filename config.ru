@@ -1,2 +1,3 @@
-require './application'
-run Sinatra::Application
+require './idea_canvas'
+
+run IdeaCanvas
