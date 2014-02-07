@@ -1,5 +1,6 @@
 body {
   overflow-x:hidden;
+  background-color: #AAD4DA;
 }
 
 a {
@@ -20,12 +21,14 @@ img.sneak-peek {
 }
 
 h1.main-title {
+  color: #31223A;
   text-transform: uppercase;
   font-size: 100px;
   line-height: 0.85em;
 }
 
 h3.proposition {
+  color: #1F243A;
   font-family: 'Roboto', sans-serif;
 	font-weight: 300;
   text-transform: uppercase;
