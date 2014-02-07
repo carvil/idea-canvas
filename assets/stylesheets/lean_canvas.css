@@ -15,7 +15,7 @@ img.sneak-peek {
   position: fixed;
   right: 0px;
   top: 70px;
-  margin-right: -250px;
+  margin-right: -200px;
   z-index: 1000;
   max-height: 600px;
 }
