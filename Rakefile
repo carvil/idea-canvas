@@ -1,4 +1,4 @@
-require 'sinatra/asset_pipeline/task.rb'
-require './idea_canvas'
+APP_FILE  = 'idea_canvas.rb'
+APP_CLASS = 'IdeaCanvas'
 
-Sinatra::AssetPipeline::Task.define! IdeaCanvas
+require 'sinatra/assetpack/rake'
