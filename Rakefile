@@ -1,4 +1,4 @@
 require 'sinatra/asset_pipeline/task.rb'
-require './app'
+require './idea_canvas'
 
-Sinatra::AssetPipeline::Task.define! Application
+Sinatra::AssetPipeline::Task.define! IdeaCanvas
