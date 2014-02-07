@@ -27,18 +27,49 @@
 	@media only screen and (max-width: 959px) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+    img.sneak-peek {
+      margin-right: -400px !important;
+    }
+  }
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+    img.sneak-peek {
+      margin-right: -500px !important;
+    }
+  }
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) { }
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+    img.sneak-peek {
+      display: none;
+    }
+  }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
+
+    div.main-message {
+      margin-top: 10px !important;
+    }
+
     img.sneak-peek {
       display: none;
+    }
+
+    h1.main-title {
+      text-transform: uppercase;
+      font-size: 50px !important;
+      line-height: 0.80em;
+    }
+
+    h3.proposition {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 20px !important;
+      line-height: 0.8em;
     }
   }
 
