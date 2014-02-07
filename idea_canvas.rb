@@ -1,14 +1,23 @@
 require 'bundler'
 Bundler.require
 
-require 'sinatra/asset_pipeline'
+require 'sinatra/base'
+require 'sinatra/assetpack'
 
 class IdeaCanvas < Sinatra::Base
 
-  set :assets_precompile, %w(*.css *.png *.jpg *.svg)
-  set :assets_prefix, %w(assets assets/stylesheets/ assets/images/)
+  set :root, File.dirname(__FILE__)
+  register Sinatra::AssetPack
 
-  register Sinatra::AssetPipeline
+  assets {
+    serve '/stylesheets', from: 'assets/stylesheets'
+    serve '/images'     , from: 'assets/images'
+
+    css :application, '/css/application.css', [
+      '/stylesheets/base.css', '/stylesheets/layout.css',
+      '/stylesheets/lean_canvas.css', '/stylesheets/skeleton.css'
+    ]
+  }
 
   get '/' do
     haml :index

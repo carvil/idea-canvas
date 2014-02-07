@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'sinatra'
-gem 'sinatra-asset-pipeline'
+gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 gem 'haml'
 

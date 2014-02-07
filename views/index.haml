@@ -15,10 +15,7 @@
     %link{ href: 'http://fonts.googleapis.com/css?family=Roboto:300,500',
            rel: 'stylesheet', type: 'text/css'}/
 
-    %link{href: "assets/base.css", rel: "stylesheet"}/
-    %link{href: "assets/skeleton.css", rel: "stylesheet"}/
-    %link{href: "assets/layout.css", rel: "stylesheet"}/
-    %link{href: "assets/lean_canvas.css", rel: "stylesheet"}/
+    != css :application, :media => 'screen'
 
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,12 +34,12 @@
           %h3.proposition Where startups begin.
           .download-link
             %a.link-to-store{ href: '#' }
-              %object{ data: 'assets/download_badge_135x40.svg',
+              %object{ data: 'images/download_badge_135x40.svg',
                        type: 'image/svg+xml'}
-                %img{ src: 'assets/download_badge_135x40.png' }
+                %img{ src: 'images/download_badge_135x40.png' }
 
       .two.columns.omega
-        %img.sneak-peek{ src: 'assets/canvasMenu.png' }
+        %img.sneak-peek{ src: 'images/canvasMenu.png' }
 
     .footer
       %span.copy © 2014 Idea Canvas
