@@ -2,6 +2,10 @@ body {
   overflow-x:hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .hero {
   top: 70px;
 }
@@ -60,11 +64,11 @@ a.link-to-store:after {
   right:0;
   height:50px;
   overflow:hidden;
-  background-color:#2eb2a0;
+  background-color:#1C626C;
   font-size:15px;
   line-height:50px;
   padding:0 30px;
-  color:#94e5d7;
+  color:#6CACB5;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;*zoom:1
@@ -115,14 +119,14 @@ a.link-to-store:after {
   display:block;
   height:100%;
   padding:0 15px;
-  color:#94e5d7;
+  color:#6CACB5;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
   box-sizing:border-box
 }
 
 .footer ul li a:hover {
-  color:#ecfffc
+  color:#AAD4DA;
 }
 
 .footer ul li.home {
