@@ -1,11 +1,18 @@
+body {
+  overflow-x:hidden;
+}
+
 .hero {
   top: 70px;
 }
 
 img.sneak-peek {
+  position: fixed;
+  right: 0px;
+  top: 70px;
+  margin-right: -250px;
+  z-index: 1000;
   max-height: 600px;
-  position: absolute;
-  left: 60%;
 }
 
 h1.main-title {
@@ -43,4 +50,85 @@ a.link-to-store:after {
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+
+.footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:50px;
+  overflow:hidden;
+  background-color:#2eb2a0;
+  font-size:15px;
+  line-height:50px;
+  padding:0 30px;
+  color:#94e5d7;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;*zoom:1
+}
+
+@media only screen and (max-width: 500px) {
+  .footer{
+    padding:0;
+    display:none
+  }
+}
+
+.footer:after {
+  content:"";
+  display:table;
+  clear:both
+}
+
+.footer span {
+  float:left
+}
+
+.footer ul {
+  float:right
+}
+
+@media only screen and (max-width: 500px){
+  .footer ul{
+    float:none
+  }
+}
+
+.footer ul li {
+  display:inline-block; *display:inline; *zoom:1
+}
+
+@media only screen and (max-width: 500px) {
+  .footer ul li {
+    display:none
+  }
+}
+
+.footer ul li:last-child {
+  padding:0
+}
+
+.footer ul li a {
+  display:block;
+  height:100%;
+  padding:0 15px;
+  color:#94e5d7;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+
+.footer ul li a:hover {
+  color:#ecfffc
+}
+
+.footer ul li.home {
+  display:none
+}
+
+.footer ul li.justify {
+  display:none
 }
