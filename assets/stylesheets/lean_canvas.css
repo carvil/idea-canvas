@@ -34,20 +34,19 @@ a {
   background-position: center;
   background-size: cover;
   position: absolute;
-  margin: 250px auto;
+  margin: 230px auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 250px;
 }
 
 @media only screen and (max-width: 479px) {
   .sneak-peek {
     display: none;
   }
-
   .sneak-peek-mobile {
     display: block;
   }
@@ -57,7 +56,26 @@ a {
   .sneak-peek-mobile {
     display: none;
   }
+  .sneak-peek {
+    display: block;
+  }
+}
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .sneak-peek-mobile {
+    height: 380px;
+    margin: 260px auto;
+    display: block;
+  }
+  .sneak-peek {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sneak-peek-mobile {
+    display: none;
+  }
   .sneak-peek {
     display: block;
   }
@@ -79,6 +97,15 @@ h1.main-title {
   }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  h1.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 0.80em;
+  }
+}
+
 h3.proposition {
   color: #1F243A;
   font-family: 'Roboto', sans-serif;
@@ -91,10 +118,15 @@ h3.proposition {
 @media only screen and (max-width: 479px) {
   h3.proposition {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
     font-size: 20px;
+    line-height: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  h3.proposition {
+    text-align: center;
+    font-size: 30px;
     line-height: 0.8em;
   }
 }
@@ -103,7 +135,7 @@ div.main-message {
   margin-top: 120px;
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 768px) {
   div.main-message {
     margin-top: 10px;
   }
@@ -151,8 +183,7 @@ a.link-to-store:after {
 
 @media only screen and (max-width: 500px) {
   .footer{
-    padding:0;
-    display:none
+    padding: 0 15px;
   }
 }
 
@@ -163,7 +194,7 @@ a.link-to-store:after {
 }
 
 .footer span {
-  float:left
+  float:left;
 }
 
 .footer ul {
