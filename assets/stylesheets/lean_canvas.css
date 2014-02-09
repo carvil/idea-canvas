@@ -1,5 +1,8 @@
 body {
-  overflow-x:hidden;
+  /* background-image: url('/images/wood.jpg'); */
+  /* background-size:1600px 960px; */
+  /* background-repeat:no-repeat; */
+  /* overflow-x:hidden; */
   background-color: #AAD4DA;
 }
 
@@ -11,13 +14,13 @@ a {
   top: 70px;
 }
 
-img.sneak-peek {
+.sneak-peek {
   position: fixed;
-  right: 0px;
-  top: 70px;
-  margin-right: -200px;
-  z-index: 1000;
-  max-height: 600px;
+  background-image: url('/images/canvas-ipad-air-black.png');
+  background-size: cover;
+  min-height: 730px;
+  background-position: -70px center;
+  min-width: 1000px;
 }
 
 h1.main-title {
