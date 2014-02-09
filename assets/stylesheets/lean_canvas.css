@@ -34,7 +34,7 @@ a {
   background-position: center;
   background-size: cover;
   position: absolute;
-  margin: 230px auto;
+  margin: 120px auto;
   top: 0;
   right: 0;
   bottom: 0;
@@ -146,6 +146,12 @@ div.download-link {
   text-align: center;
 }
 
+@media only screen and (max-width: 479px) {
+  div.download-link {
+    margin-top: 250px;
+  }
+}
+
 a.link-to-store {
   position: relative;
   display: inline-block;
@@ -183,7 +189,6 @@ a.link-to-store:after {
 
 @media only screen and (max-width: 500px) {
   .footer{
-    display: none;
     padding: 0 15px;
   }
 }
