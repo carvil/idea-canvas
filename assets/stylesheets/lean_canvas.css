@@ -14,13 +14,53 @@ a {
   top: 70px;
 }
 
+@media only screen and (max-width: 767px) {
+  .hero {
+    top: 0px;
+  }
+}
+
 .sneak-peek {
   position: fixed;
   background-image: url('/images/canvas-ipad-air-black.png');
   background-size: cover;
   min-height: 730px;
-  background-position: -70px center;
+  background-position: -83px center;
   min-width: 1000px;
+}
+
+.sneak-peek-mobile {
+  background-image: url('/images/canvas-ipad-air-black.png');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  margin: 250px auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 479px) {
+  .sneak-peek {
+    display: none;
+  }
+
+  .sneak-peek-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .sneak-peek-mobile {
+    display: none;
+  }
+
+  .sneak-peek {
+    display: block;
+  }
 }
 
 h1.main-title {
@@ -28,6 +68,15 @@ h1.main-title {
   text-transform: uppercase;
   font-size: 100px;
   line-height: 0.85em;
+}
+
+@media only screen and (max-width: 479px) {
+  h1.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 0.80em;
+  }
 }
 
 h3.proposition {
@@ -39,8 +88,25 @@ h3.proposition {
   line-height: 0.8em;
 }
 
+@media only screen and (max-width: 479px) {
+  h3.proposition {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 0.8em;
+  }
+}
+
 div.main-message {
   margin-top: 120px;
+}
+
+@media only screen and (max-width: 479px) {
+  div.main-message {
+    margin-top: 10px;
+  }
 }
 
 div.download-link {
@@ -62,6 +128,9 @@ a.link-to-store:after {
   right: 0;
 }
 
+.messaging {
+  /* margin-right: 0px !important; */
+}
 
 .footer{
   position:fixed;
