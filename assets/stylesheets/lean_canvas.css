@@ -25,7 +25,7 @@ a {
   background-image: url('/images/canvas-ipad-air-black.png');
   background-size: cover;
   min-height: 730px;
-  background-position: -83px center;
+  background-position: 50% 50%;
   min-width: 1000px;
 }
 
