@@ -16,6 +16,9 @@
            rel: 'stylesheet', type: 'text/css'}/
 
     != css :application, :media => 'screen'
+    != js :application
+    :javascript
+      new WOW().init();
 
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,19 +31,19 @@
 
   %body
     .container.hero
-      .ten.columns.alpha
+      .nine.columns.alpha
         .main-message
-          %h1.main-title Idea Canvas.
-          %h3.proposition Where startups begin.
+          %h1.main-title.wow.fadeInDown Idea Canvas.
+          %h3.proposition.wow.fadeInDown{ data: { 'wow-delay' => '1s'}} Where startups begin.
           .sneak-peek-mobile
-          .download-link
+          .download-link.wow.slideInLeft{ data: { 'wow-delay' => '2s'}}
             %a.link-to-store{ href: '#' }
               %object{ data: 'images/download_badge_135x40.svg',
                        type: 'image/svg+xml'}
                 %img{ src: 'images/download_badge_135x40.png' }
 
-      .two.columns.omega
-        .sneak-peek
+      .three.columns.omega
+        .sneak-peek.wow.slideInRight{data: { 'wow-delay' => "2s" }}
 
     .footer
       %span.copy © 2014 Idea Canvas

@@ -2,7 +2,7 @@ body {
   /* background-image: url('/images/wood.jpg'); */
   /* background-size:1600px 960px; */
   /* background-repeat:no-repeat; */
-  /* overflow-x:hidden; */
+  overflow-x:scroll;
   background-color: #AAD4DA;
 }
 
@@ -11,12 +11,12 @@ a {
 }
 
 .hero {
-  top: 70px;
+  margin-top: 70px;
 }
 
 @media only screen and (max-width: 767px) {
   .hero {
-    top: 0px;
+    margin-top: 0px;
   }
 }
 
