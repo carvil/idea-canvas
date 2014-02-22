@@ -8,8 +8,8 @@
   %head
     %meta{charset: "utf-8"}/
     %title Idea Canvas App
-    %meta{content: "", name: "description"}/
-    %meta{content: "", name: "author"}/
+    %meta{content: "Idea Canvas App is an iPad application that lets you structure your startup ideas, following the lean model canvas, which is an optimized business model canvas for lean startups.", name: "description"}/
+    %meta{content: "Carlos Vilhena, carlosvilhena.com", name: "author"}/
     %meta{content: "width=device-width, initial-scale=1, maximum-scale=1, minimal-ui", name: "viewport"}/
 
     %link{ href: 'http://fonts.googleapis.com/css?family=Roboto:300,500',
@@ -40,7 +40,8 @@
             %a.link-to-store{ href: '#' }
               %object{ data: 'images/download_badge_135x40.svg',
                        type: 'image/svg+xml'}
-                %img{ src: 'images/download_badge_135x40.png' }
+                %img{ src: 'images/download_badge_135x40.png',
+                      alt: 'Download Now', text: 'Download Now' }
 
       .three.columns.omega
         .sneak-peek.wow.slideInRight{data: { 'wow-delay' => "2s" }}
