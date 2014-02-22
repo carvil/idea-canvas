@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Carlos Vilhena (Developer)
+    Site: http://www.carlosvilhena.com
+    Location: London
+
+    Adriana Santos (iOS-Developer)
+    Site: https://github.com/adsantos
+    Location: London
+
+    Jamille Dazzi (Designer)
+    Site: https://twitter.com/jamilledazzi
+    Location: London
+
+# TECHNOLOGY COLOPHON
+
+    Ruby, HTML5, CSS3
