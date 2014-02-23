@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/assetpack'
+require 'newrelic_rpm'
 
 class IdeaCanvas < Sinatra::Base
 
