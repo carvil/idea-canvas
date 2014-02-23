@@ -26,4 +26,9 @@ class IdeaCanvas < Sinatra::Base
   get '/' do
     haml :index
   end
+
+  get '/ping' do
+    status 200
+    body ''
+  end
 end
